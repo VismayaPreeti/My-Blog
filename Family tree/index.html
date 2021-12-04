@@ -1,0 +1,54 @@
+<html>
+    <head>
+      <title>Family Tree</title>
+      <link rel="stylesheet" href="style.css">
+      </head>
+      <body style="text-align: center;">
+        <h1>My Family Tree</h1>
+        <img src="" style="width: 300px;height: 480px;" id="family_images">
+        <h4 id="family_name"></h4>
+        <button id="next button" onclick="update();">Next</button>
+        <script>
+            var images=[
+            file:///C:/Users/User/Desktop/father.png
+            file:///C:/Users/User/Desktop/mother.jpg
+            file:///C:/Users/User/Desktop/me.jpg
+            file:///C:/Users/User/Desktop/gm.jpg
+            file:///C:/Users/User/Desktop/gp.jpg
+            file:///C:/Users/User/Desktop/uncle.png
+            file:///C:/Users/User/Desktop/aunt.jpg
+            file:///C:/Users/User/Desktop/brother.jpg
+          ];
+
+            var names=[
+                Father
+                Mother
+                Vismaya
+                Grandmother
+                Grandfather
+                Uncle 
+                Aunt 
+                Brother
+            ];
+
+            var i = 0;
+            function update() {
+              i++
+              var number_of_family_members_in_array=14
+              if(i > number_of_family_members_in_array)
+              {
+                i = 0;
+              }
+              var updatedimage=image[i];
+              var updatednames=names[i];
+              document.getElementById("family_images").src=updatedimage;
+              document.getElementById("family_name").src=updatednames;
+            } 
+            </Script>
+            </body>
+            </html>
+
+            
+
+
+            
